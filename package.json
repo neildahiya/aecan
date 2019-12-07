@@ -1,0 +1,23 @@
+{
+  "name": "aecan",
+  "version": "1.0.0",
+  "description": "Thank you for using our template!",
+  "main": "app.js",
+  "homepage": "https://neildahiya.github.io/aecan",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d ."
+  },
+  "author": "neil dahiya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.13.0",
+    "nodemailer": "^6.4.0",
+    "nodemon": "^2.0.1"
+  }
+}
