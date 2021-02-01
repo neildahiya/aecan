@@ -42,10 +42,7 @@
         <div class="container">
           <div class="row align-items-center position-relative">
             <div class="col-lg-4">
-              <nav
-                class="site-navigation text-right ml-auto "
-                role="navigation"
-              >
+              <nav class="site-navigation text-right ml-auto" role="navigation">
                 <ul
                   class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block"
                 >
@@ -74,7 +71,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <nav class="site-navigation text-left mr-auto " role="navigation">
+              <nav class="site-navigation text-left mr-auto" role="navigation">
                 <ul
                   class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block"
                 >
@@ -91,13 +88,10 @@
       </header>
       <hr />
 
-      <div style="width: 50%;" class="justify-content-center container">
+      <div style="width: 50%" class="justify-content-center container">
         <strong><p>Enter the Certificate Number for verification</p></strong>
         <input
-          style="
-            width: 100%;
-            border: 1px solid blue;
-            display: block;"
+          style="width: 100%; border: 1px solid blue; display: block"
           id="certiNum"
           type="text"
           name="certiNum"
@@ -106,9 +100,11 @@
 
         <button
           class="mt-2 btn btn-primary"
-          style="width: 100%;
-          
-          display: block;"
+          style="
+            width: 100%;
+
+            display: block;
+          "
           onclick="myfunction()"
         >
           Check
@@ -118,12 +114,12 @@
       <div class="mt-3 container d-flex justify-content-center">
         <div id="right" style="display: none" class="alert alert-success">
           <!-- <strong>Success!</strong> Indicates a successful or positive action. -->
-          <div>Company Name: <span id="comName" style="color:red"></span></div>
+          <div>Company Name: <span id="comName" style="color: red"></span></div>
           <div>
-            Expiration Date: <span id="expDate" style="color:red"></span>
+            Expiration Date: <span id="expDate" style="color: red"></span>
           </div>
           <div>
-            Certificate Number: <span id="cerNum" style="color:red"></span>
+            Certificate Number: <span id="cerNum" style="color: red"></span>
           </div>
           <!-- <p
             >Company Name:
@@ -141,7 +137,7 @@
            -->
         </div>
       </div>
-      <div style="display: none" class=" d-flex justify-content-center">
+      <div style="display: none" class="d-flex justify-content-center">
         <div id="wrong" style="display: none" class="alert alert-danger">
           <strong>Certificate number not found</strong>
         </div>
@@ -176,38 +172,48 @@
           {
             cerNum: "AC-121901",
             expDate: "December 2022",
-            comName: "AADVIK PHARMA"
+            comName: "AADVIK PHARMA",
           },
           {
             cerNum: "AC-121902",
             expDate: "31 Jan 2023",
-            comName: "Biolife Technologies"
+            comName: "Biolife Technologies",
           },
           {
             cerNum: "AC-121903",
             expDate: "20 Feb 2023",
-            comName: "Anondita Healthcare Pvt. Ltd."
+            comName: "Anondita Healthcare Pvt. Ltd.",
           },
           {
             cerNum: "AC-121904",
             expDate: "20 Feb 2023",
-            comName: "Anondita Healthcare"
+            comName: "Anondita Healthcare",
           },
           {
             cerNum: "AC-121910",
             expDate: "5 May 2023",
-            comName: "Anondita Healthcare"
+            comName: "Anondita Healthcare",
           },
           {
             cerNum: "AC-121911",
             expDate: "5 May 2023",
-            comName: "ABOD Pharmaceuticals"
+            comName: "ABOD Pharmaceuticals",
           },
           {
             cerNum: "AC-121912",
             expDate: "5 May 2023",
-            comName: "ABOD Pharmaceuticals WHOGMP"
-          }
+            comName: "ABOD Pharmaceuticals WHOGMP",
+          },
+          {
+            cerNum: "AC-121932",
+            expDate: "22nd Jan 2024",
+            comName: "MG Medics",
+          },
+          {
+            cerNum: "AC-121933",
+            expDate: "22nd Jan 2024",
+            comName: "MG Medics",
+          },
         ];
         for (var i = 0; i < arr.length; i++) {
           if (arr[i].cerNum == num) {
